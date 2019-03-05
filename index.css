@@ -42,6 +42,7 @@
 body{
     font-family: "Lato", "AdobeInvisFont", "MyriadPro-Regular";
     font-size: 12pt;
+    margin: 0;
 }
 nav{
     background-color: #323232;
@@ -54,7 +55,7 @@ nav{
 }
 nav h2 {
     text-transform: uppercase;
-    margin: auto 2vh;
+    margin: auto 2vw;
     
 }
 nav h2:hover{
@@ -65,12 +66,16 @@ nav a{
 }
 .logo{
     align-self: flex-end;
+    margin: 0 2vw;
 }
 h2{
     font-family: "Lato", "AdobeInvisFont", "MyriadPro-Regular";
     font-size: 7.21379pt;
     color: rgba(255, 255, 255, 255);
     text-align: justify;
+    margin: 0 auto;
+
+    
 }
 h1{
     font-family: "Maven Pro", "AdobeInvisFont", "MyriadPro-Regular";
@@ -78,6 +83,7 @@ font-size: 30pt;
 font-weight: 400;
 color: rgba(215, 252, 245, 255);
 text-align: justify;
+margin: 0 auto;
 }
 h3{
     font-family: "Maven Pro", "AdobeInvisFont", "MyriadPro-Regular";
@@ -85,27 +91,46 @@ font-size: 18pt;
 font-weight: 400;
 color: rgba(32, 129, 109, 255);
 text-align: justify;
+margin: 0 auto;
+
 }
 .triangle{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 35px 60px 0 60px;
+    border-width: 2.3vw 5vw 0 5vw;
     border-color: #323232 transparent transparent transparent;
     margin: 0 auto;
+}
+.line{
+    width: 40vw;
+    height: 2px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #323232;
+    margin: -15px 30px 10px 30px;
+}
+.right{
+    float: right
 }
 /*
 .arrow-cont{
     width: 64px; 
 }
 <div class="arrow-cont"></div>*/
-.hexarea{
-    
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;    
 }
+.next{
+    margin-top: -77px;
+}
+
 .hexagon{
     width: 180px;
     height: 210px;
-    margin: 20px;
+    margin: 18px 9px;
     overflow: hidden;
     transform: rotate(120deg);
     visibility: hidden;
@@ -127,7 +152,40 @@ text-align: justify;
     visibility: visible;
 
 }
+.about-area{
+    background-color: #2eb398;
+    height: 341px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 220px 2fr 1fr 100px;
+    grid-template-rows: 68px 181px 25px 67px;
+    
+}
+.about-area p{
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+}
+.vertical{
+    width: 2px;
+    height: 316px;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: rgba(32, 129, 109, 255);
+    margin:  auto;
+    grid-area: 1 / 1 / 5 / 2 ;
+ 
+}
 .photo {
 background-image: url('./assets/img/photo.png');
 background-position: 50%;
+grid-area: 2 / 2 / 4 / 3 ;
+}
+.about{
+    grid-area: 2 / 3 / 3 / 5 ;
+}
+.second{
+    grid-area: 1 / 5 / 5 / 6 ;
+}
+.social{
+    grid-area: 3 / 4 / 4 / 5 ;
 }
