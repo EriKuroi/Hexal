@@ -427,6 +427,10 @@ margin: 0;
     font-family: Lato-Black, Lato, AdobeInvisFont, MyriadPro-Regular;
 
 }
+.cont a{
+text-decoration: none;
+color: inherit;
+}
 .cont{
     display: flex;
     height: 54px;
