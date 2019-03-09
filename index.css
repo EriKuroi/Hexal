@@ -96,8 +96,11 @@ body{
 }
 
 /*NAV SECTION*/
-
 nav{
+    position: relative;
+}
+
+.menu{
     background-color: #323232;
     display: flex;
     justify-content: center;
@@ -106,38 +109,48 @@ nav{
     align-items: center;
     
 }
-nav h2 {
+.menu h2 {
     text-transform: uppercase;
     margin: auto 2vw;
     
 }
-nav h2:hover{
+.menu h2:hover{
 color: rgba(46, 179, 152, 255);
 }
-nav a{
+.menu a{
     text-decoration: none
+}
+.dot{
+width: 1px;
+height: 1px;
+background-color: rgba(255, 255, 255, 255);
 }
 .logo{
     align-self: flex-end;
     margin: 0 2vw;
 }
 
-.triangle{
+nav:after{
+    content: "";
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 2.3vw 5vw 0 5vw;
     border-color: #323232 transparent transparent transparent;
     margin: 0 auto;
+    position: absolute;
+    left: 45%;
+    z-index: 2;
+    
 }
-.line{
+/*.line{
     width: calc(100% - 60px);
     height: 2px;
     border-width: 1px 0 0 0;
     border-style: solid;
     border-color: #e4e9eb;
     margin: -15px 30px 10px 30px;
-    /*content: "";
+    content: "";
     width: 960vw;
     height: 1px;
     position: absolute;
@@ -151,7 +164,7 @@ nav a{
 
 h2{
     font-family: "Lato", "AdobeInvisFont", "MyriadPro-Regular";
-    font-size: 7.21379pt;
+    font-size: 7pt;
     color: rgba(255, 255, 255, 255);
     text-align: justify;
     margin: 0 auto;
@@ -185,10 +198,22 @@ text-align: justify;
 
 /*HEX SECTION*/
 
-
+.hex-area{
+    position: relative;
+}
+.invis{
+    width: 160px;
+    height: 2.3vw;
+    background-color: white;
+    position: absolute;
+    left: 43%;
+    top: 63px;
+    z-index: 1;
+}
 .row{
     display: flex;    
-    justify-content: center;    
+    justify-content: center; 
+   
 }
 .hex-area .row:nth-child(odd):after, .hex-area .row:nth-child(odd):before {
     content: '';
@@ -207,15 +232,13 @@ text-align: justify;
     margin: auto 0 auto 10px;
 }
 .row + .row{
-    margin-top: -95px;
+    margin-top: -220px;
 }
-.hex-area :last-child{
-    margin-bottom: 40px;
-}
+
 .hexagon{
     width: 180px;
     height: 210px;
-    margin: 18px 9px;
+    margin: 89px 9px;
     overflow: hidden;
     transform: rotate(120deg);
     visibility: hidden;
@@ -239,7 +262,7 @@ text-align: justify;
 }
 .rectangles{
     display: flex;
-    margin: 11px 30px;
+    padding: 23px 30px;
 }
 .rectangles div{
     width: 6px;
@@ -250,13 +273,23 @@ text-align: justify;
 .rectangles :nth-child(3){
     background-color:#8b8784;
 }
-
-.hex-area:after{
+.hex-area:before, .hex-area:after{
     content: "";
-    width: 960vw;
-    height: 1px;
+    width: calc(100% - 60px);
+    height: 1px;       
     position: absolute;
+    
+}
+.hex-area:after{    
+    background-color: #e4e9eb;    
     bottom: 11px;
+    left: 30px;
+}
+
+.hex-area:before{
+    background-color: #e4e9eb;    
+    top: 11px;
+    left: 30px;
 }
 
 /*ABOUT SECTION*/
@@ -403,6 +436,9 @@ margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 6px;
+    height: 54px;
+
 }
 .cont img{
     object-fit: none;
@@ -410,6 +446,7 @@ margin: 0;
 }
 .cont h6{
 margin-left: 11px;
+line-height: 155%;
 }
 
 .form-area:before{
@@ -433,11 +470,11 @@ margin-left: 11px;
 height: 43px;
 background-color: #222222;
 font-family: Maven Pro, AdobeInvisFont, MyriadPro-Regular;
-font-size: 8.65655pt;
+font-size: 9pt;
 color: rgba(69, 69, 69, 255);
 text-align: justify;
 display: flex;
-vertical-align: middle;
+align-items: center;
 padding-left: 39px;
 
 }
