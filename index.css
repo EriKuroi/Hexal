@@ -480,7 +480,7 @@ nav:after {
 
 .form-here {
     width: 580px;
-    margin: 67px;
+    margin: 67px 20px;
 
 }
 
@@ -526,6 +526,7 @@ textarea {
 .cont-area {
     width: 180px;
     margin: 134px 10px;
+    position: relative;
 
 
 }
@@ -535,6 +536,8 @@ textarea {
     text-align: justify;
     font-size: 12px;
     line-height: 200%;
+    position: absolute;
+    top: -20px;
 }
 
 .cont-area p strong {
@@ -551,6 +554,9 @@ textarea {
     display: flex;
     height: 54px;
     margin-top: 46px;
+    margin-bottom: 40px;
+    position: absolute;
+    top: 104px;
 }
 
 .cont div {
