@@ -178,7 +178,7 @@ table {
 
 body {
     font-family: "Lato", "AdobeInvisFont", "MyriadPro-Regular";
-    font-size: 12pt;
+    font-size: 12px;
 }
 
 /* Line Decorations */
@@ -203,13 +203,11 @@ h2 {
     color: rgba(255, 255, 255, 255);
     text-align: justify;
 
-
-
 }
 
 h1 {
     font-family: "Maven Pro", "AdobeInvisFont", "MyriadPro-Regular";
-    font-size: 30pt;
+    font-size: 30px;
     font-weight: 400;
     color: rgba(215, 252, 245, 255);
     text-align: justify;
@@ -218,7 +216,7 @@ h1 {
 
 h3 {
     font-family: "Maven Pro", "AdobeInvisFont", "MyriadPro-Regular";
-    font-size: 18pt;
+    font-size: 18px;
     font-weight: 400;
     color: rgba(32, 129, 109, 255);
     text-align: justify;
@@ -228,7 +226,7 @@ h3 {
 h6 {
 
     font-family: Lato-Bold, Lato, AdobeInvisFont, MyriadPro-Regular;
-    font-size: 11pt;
+    font-size: 11px;
     color: rgba(224, 224, 224, 255);
     text-align: justify;
 }
@@ -406,6 +404,7 @@ nav:after {
 .about-area p {
     color: rgba(215, 252, 245, 255);
     text-align: justify;
+    line-height: 200%;
 }
 
 .about-area:before,
@@ -461,6 +460,9 @@ nav:after {
     grid-area: 3 / 4 / 4 / 5;
     position: absolute;
 }
+.social a :hover{
+     transform: scale(1.2); 
+}
 
 /* FOOTER AREA */
 
@@ -487,7 +489,7 @@ textarea {
     background-color: #454545;
     border: none;
     font-family: Lato, AdobeInvisFont, MyriadPro-Regular;
-    font-size: 12pt;
+    font-size: 12px;
     height: 38px;
     width: 580px;
     margin: 8px 20px 8px 0;
@@ -515,7 +517,7 @@ textarea {
     background-color: #2eb398;
     font-family: Lato, AdobeInvisFont, MyriadPro-Regular;
     font-weight: 700;
-    font-size: 12pt;
+    font-size: 12px;
     color: rgba(215, 252, 245, 255);
     border: none;
     float: right;
@@ -531,7 +533,8 @@ textarea {
 .cont-area p {
     color: rgba(224, 224, 224, 255);
     text-align: justify;
-    font-size: 11pt;
+    font-size: 12px;
+    line-height: 200%;
 }
 
 .cont-area p strong {
@@ -566,7 +569,7 @@ textarea {
 
 .cont h6 {
     margin-left: 11px;
-    line-height: 155%;
+    line-height: 200%;
 }
 
 .form-area:before {
@@ -585,7 +588,7 @@ textarea {
     height: 43px;
     background-color: #222222;
     font-family: Maven Pro, AdobeInvisFont, MyriadPro-Regular;
-    font-size: 9pt;
+    font-size: 12px;
     color: rgba(69, 69, 69, 255);
     text-align: justify;
     display: flex;
